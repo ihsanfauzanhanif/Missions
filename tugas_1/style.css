@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-red { background-color: red; }
+.bg-orange { background-color: orange; }
+.bg-orangeyellow { background-color: rgb(255, 211, 15); }
+.bg-yellow { background-color: yellow; }
+.bg-green { background-color: green; }
+.bg-greenblue {background-color: rgb(13, 146, 80);}
+.bg-blue { background-color: dodgerblue; }
+.bg-purple { background-color: rgb(139, 70, 139); }
+.bg-pink { background-color: pink; }
+.bg-lt-green { background-color: lightgreen; }
+.bg-da-blue { background-color: rgb(12, 62, 168); }
+.text-yellow { color: yellow;}
+
+.container-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 20% 20% 40%;
+}
+
+.box {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/* Box Merah */
+.box-1 {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+/* Box Hijau */
+.box-2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+/* Box Ungu */
+.box-3 {
+    grid-column: 4;
+    grid-row: 1;
+}
+/* Box Pink */
+.box-4 {
+    grid-column: 2;
+    grid-row: 2 / 5;
+}
+/* Box Hijau Muda */
+.box-5 {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+/* Box Biru */
+.box-6 {
+    grid-column: 3;
+    grid-row: 3 / 5;
+}
+/* Box Biru Tua */
+.box-7 {
+    grid-column: 4;
+    grid-row: 3 / 7;
+}
+/* Box Jingga */
+.box-8 {
+    grid-column: 1;
+    grid-row: 4 / 7;
+}
+/* Box Kuning */
+.box-9 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+}
