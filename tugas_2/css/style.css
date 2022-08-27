@@ -113,6 +113,7 @@ html, body {
 
 .post {
     display: block;
+    padding-top: 2.6rem;
 }
 
 .post-img {
@@ -120,7 +121,7 @@ html, body {
 }
 
 .post-item {
-    margin-top: 3rem;
+    margin-top: 4.6rem;
     display: flex;
 }
 
