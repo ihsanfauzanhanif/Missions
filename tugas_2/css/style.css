@@ -9,8 +9,12 @@ html, body {
 }
 
 .content {
-    padding-right: 12rem;
-    padding-left: 12rem;
+    padding-right: 16rem;
+    padding-left: 16rem;
+}
+
+.flex {
+    display: flex;
 }
 
 .w-2 { width: 16.6666666666%; }
@@ -60,26 +64,27 @@ html, body {
     padding-bottom: 1rem;
 }
 
-.banner {
+.message {
     margin-top: 2rem;
     padding: 2rem;
     background-color: rgb(233,236,239);
     border-radius: 4px;
 }
-.banner-title {
+
+.message-title {
     margin-top: 0;
     margin-bottom: 0.6rem;
     font-weight: 100;
     color: #091836;
 }
-.banner-desc {
+.message-desc {
     display: block;
     color: #778298;
     line-height: 1.8rem;
     font-size: 20px;
 }
 
-.banner-button {
+.message-button {
     text-align: center;
     margin-top: 0.8rem;
     width: 150px;
@@ -119,10 +124,6 @@ html, body {
     display: flex;
 }
 
-.post-infobox {
-    padding-left: 2rem;
-}
-
 .post-title {
     display: block;
     color: #DE3F1C;
@@ -138,10 +139,93 @@ html, body {
 
 .post-button {
     text-align: center;
-    margin-top: 0.8rem;
     width: 120px;
 }
 
+.post-footer {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-author {
+    display: flex;
+}
+
+.post-author > span {
+    color: #778298;
+    display: block;
+    margin-right: 0.8rem;
+    line-height: 2.5rem;
+}
+
+.post-author > img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.newsletter {
+    margin-top: 8rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+
+.newsletter > .newsletter-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #38404F;
+}
+
+.newsletter-desc {
+    font-size: 16px;
+    color: #778298;
+}
+
+.newsletter-action {
+    width: 100%;
+    display: flex;
+}
+
+.newsletter-action > input {
+    width: 66.66666%;
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+}
+
+.input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 1rem 1.2rem;
+}
+
+.newsletter-action {
+    margin-top: 1rem;
+}
+
+.newsletter-action > button[type="submit"] {
+    width: 33.333333%;
+    background-color: #65D777;
+    font-weight: 600;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
+}
+
+.footer {
+    margin-top: 3rem;
+    border-top: 1px solid #f4f5f7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #778298;
+    font-size: 14px;
+}
 
 /* small device */
 @media (min-width: 0px) and (max-width: 575.99px) {
@@ -173,12 +257,12 @@ html, body {
     .nav-list a {
         padding: 0.2rem 0.8rem;
     }
-    .banner {
+    .message {
         margin-top: 1.8rem;
         padding-top: 1.4rem;
         padding-bottom: 1.4rem;
     }
-    .banner-button {
+    .message-button {
         margin-top: 0.4rem;
     }
     .post-item {
@@ -219,12 +303,12 @@ html, body {
     .nav-list a {
         padding: 0.2rem 0.8rem;
     }
-    .banner {
+    .message {
         margin-top: 1.8rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .banner-button {
+    .message-button {
         margin-top: 0.4rem;
     }
     .post-item {
@@ -240,11 +324,11 @@ html, body {
         padding-right: 8rem;
         padding-left: 8rem;
     }
-    .banner {
+    .message {
         margin-top: 1.8rem;
     }
     .post-infobox {
-        padding-left: 0.8rem;
+        padding-left: 1rem;
     }
     .post-img {
         width: 6rem;
