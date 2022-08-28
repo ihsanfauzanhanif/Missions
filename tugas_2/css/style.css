@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 
 html, body {
     width: 100%;
@@ -129,6 +129,11 @@ html, body {
     display: block;
     color: #DE3F1C;
     font-size: 26px;
+    text-decoration: none;
+}
+
+.post-title:hover {
+    text-decoration: underline;
 }
 
 .post-desc {
@@ -245,7 +250,18 @@ html, body {
 
 .footer-item {
     float: left;
+    display: block;
     padding-left: 1.6rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 /* small device */
@@ -283,19 +299,53 @@ html, body {
         padding-top: 1.4rem;
         padding-bottom: 1.4rem;
     }
+
+    .message-title {
+        font-size: 20px;
+        line-height: 1.8rem;
+        margin-bottom: 0.4rem;
+    }
+    .message-desc {
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
     .message-button {
-        margin-top: 0.4rem;
+        margin-top: 0.6rem;
+        width: 135px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+    .post-title {
+        font-size: 24px;
+        line-height: 2rem;
+    }
+    .post-desc {
+        font-size: 14px;
+        padding-top: 0.4rem;
     }
     .post-item {
         display: block;
+        margin-top: 2rem;
     }
     .post-infobox {
         padding-left: 0;
+    }
+    .post-button {
+        width: 100px;
     }
     .newsletter {
         margin-top: 4rem;
         margin-left: 0;
         margin-right: 0;
+    }
+    .newsletter-action > button[type="submit"] {
+        font-size: 12px;
+    }
+    .input {
+        padding: 0.6rem 0.8rem;
+        font-size: 14px;
     }
 }
 
@@ -316,7 +366,7 @@ html, body {
         text-align: center;
     }
     .nav-icon {
-        padding-top: 0.5rem;
+        padding-top: 1.2rem;
         padding-bottom: 0.5rem;
     }
     .nav-data {
@@ -331,14 +381,35 @@ html, body {
     }
     .message {
         margin-top: 1.8rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+    .message-title {
+        font-size: 20px;
+    }
+    .message-desc {
+        font-size: 18px;
+        line-height: 1.8rem;
     }
     .message-button {
         margin-top: 0.4rem;
+        width: 140px;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .post {
+        padding-top: 0;
     }
     .post-item {
         display: block;
+    }
+    .post-title {
+        font-size: 24px;
+    }
+    .post-desc {
+        font-size: 16px;
+        line-height: 1.6rem;
     }
     .post-infobox {
         padding-left: 0;
@@ -347,6 +418,13 @@ html, body {
         margin-top: 4rem;
         margin-left: 0;
         margin-right: 0;
+    }
+    .newsletter-action > button[type="submit"] {
+        font-size: 14px;
+    }
+    .input {
+        padding: 0.8rem 1.2rem;
+        font-size: 16px;
     }
 }
 
@@ -358,6 +436,10 @@ html, body {
     .message {
         margin-top: 1.8rem;
     }
+    .message-desc {
+        line-height: 2rem;
+        font-size: 18px;
+    }
     .post-infobox {
         padding-left: 1rem;
     }
@@ -366,7 +448,32 @@ html, body {
     }
     .newsletter {
         margin-top: 4rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1399.99px) {
+    .content {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+    .newsletter {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1599.99px) {
+    .content {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+    .post-infobox {
+        padding-left: 1rem;
+    }
+    .newsletter {
+        margin-left: 20rem;
+        margin-right: 20rem;
     }
 }
