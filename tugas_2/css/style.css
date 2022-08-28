@@ -466,8 +466,8 @@ html, body {
 
 @media (min-width: 1400px) and (max-width: 1599.99px) {
     .content {
-        padding-right: 10rem;
-        padding-left: 10rem;
+        padding-right: 16rem;
+        padding-left: 16rem;
     }
     .post-infobox {
         padding-left: 1rem;
