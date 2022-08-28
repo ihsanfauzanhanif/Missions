@@ -202,6 +202,10 @@ html, body {
     padding: 1rem 1.2rem;
 }
 
+.input:focus {
+    outline: none;
+}
+
 .newsletter-action {
     margin-top: 1rem;
 }
@@ -210,10 +214,12 @@ html, body {
     width: 33.333333%;
     background-color: #65D777;
     font-weight: 600;
+    font-size: 16px;
     color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: none;
+    cursor: pointer;
     box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
     -webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
     -moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.34);
@@ -226,6 +232,20 @@ html, body {
     padding-bottom: 2rem;
     color: #778298;
     font-size: 14px;
+    display: flex;
+}
+
+.footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.footer-item {
+    float: left;
+    padding-left: 1.6rem;
 }
 
 /* small device */
@@ -240,8 +260,8 @@ html, body {
         display: block;
     }
     .nav-icon {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1.6rem;
+        padding-bottom: 0.8rem;
     }
     .nav-icon-data {
         justify-content: center;
@@ -271,6 +291,11 @@ html, body {
     }
     .post-infobox {
         padding-left: 0;
+    }
+    .newsletter {
+        margin-top: 4rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -318,6 +343,11 @@ html, body {
     .post-infobox {
         padding-left: 0;
     }
+    .newsletter {
+        margin-top: 4rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199.99px) {
@@ -334,26 +364,9 @@ html, body {
     .post-img {
         width: 6rem;
     }
-    /* .navbar {
-        display: block;
+    .newsletter {
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-    .nav-icon-data {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .nav-icon {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    } */
-    /* .nav-list-data {
-        display: flex;
-        justify-content: center;
-    }
-    .nav-data {
-        float: none;
-    }
-    .nav-list a {
-        padding: 0.4rem 1rem;
-    } */
 }
