@@ -240,6 +240,10 @@ html, body {
     display: flex;
 }
 
+.footer-year {
+    min-width: 60px;
+}
+
 .footer-list {
     list-style-type: none;
     margin: 0;
@@ -346,6 +350,9 @@ html, body {
     .input {
         padding: 0.6rem 0.8rem;
         font-size: 14px;
+    }
+    .footer-item {
+        padding-left: 0.6rem;
     }
 }
 
