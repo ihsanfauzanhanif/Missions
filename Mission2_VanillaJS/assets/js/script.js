@@ -1,7 +1,7 @@
 class Balloon {
     obj = null
 
-    speed = 0.8
+    speed = 0.3
     stateY = false
 
     constructor (obj) {
@@ -69,7 +69,7 @@ class Cloud {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async () => {
     // scroll to the down of the page
     let balloon = new Balloon(document.getElementById('balloon'))
     let balloon2 = new Balloon(document.getElementById('balloon2'))
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     let y_balloon = balloon.getY()
     let y_ballon2 = balloon2.getY()
-    balloon2.setSpeed(0.5)
+    balloon2.setSpeed(0.2)
     let x_cloud = cloud.getX()
     let x_cloud2 = cloud2.getX()
     let x_cloud3 = cloud3.getX()
@@ -91,18 +91,20 @@ document.addEventListener('DOMContentLoaded', function () {
     cloud4.setXMin(-x_cloud2 * 25)
     cloud4.setXMin(cloud4.getX() * 0.8)
     cloud3.setXMin(-x_cloud3 / 4)
-    // cloud.setSpeed(0.8)
-    // cloud2.setSpeed(0.8)
-    // cloud3.setSpeed(1)
 
-    console.log()
-    setInterval(() => {
+    let ready = false
+    let init = true
+
+    let animate = () => {
         balloon.animateY(y_balloon, y_balloon + 30)
         balloon2.animateY(y_ballon2, y_ballon2 + 40)
         cloud.animateX()
         cloud2.animateX()
         cloud3.animateX()
         cloud4.animateX()
-    }, 64)
+
+        window.requestAnimationFrame(animate)
+    }
+    window.requestAnimationFrame(animate)
     
 });
