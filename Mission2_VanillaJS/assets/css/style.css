@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+html, body {
+    overflow: hidden;
+}
+
+.img-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/sky.png');
+}
+
+.w-full {
+    width: 100%;
+}
+
+.pos-b {
+    position: absolute;
+    bottom: 0;
+}
+
+.moon {
+    position: absolute;
+    top: 12vh;
+    left: auto;
+    right: 24vw;
+    max-width: 13vw;
+    
+}
+
+.img-balloon1 {
+    position: absolute;
+    max-width: 20vw;
+    top: 18vh;
+    left: 10vw;
+    z-index: 10;
+}
+
+
+.img-balloon2 {
+    position: absolute;
+    max-width: 7vw;
+    top: 30vh;
+    right: 12vw;
+    z-index: 10;
+}
+
+.cloud1 {
+    max-width: 25vw;
+    position: absolute;
+    top: 14vh;
+    left: 6vw;
+}
+.cloud2 {
+    max-width: 80vw;
+    position: absolute;
+    top: 20vh;
+    left: 4vw;
+}
+.cloud3 {
+    max-width: 18vw;
+    position: absolute;
+    top: 28vh;
+    right: 4vw;
+}
+
+.content {
+    height: 100vh;
+}
+
+.cover-title {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    top: 35vh;
+    z-index: 99;
+}
+
+.cover-title > h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 4rem;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+}
+
+.cover-title > span {
+    color: rgb(194, 194, 194);
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+}
+
+/* small */
+
+@media (min-width: 0px) and (max-width: 575.99px) {
+    .img-balloon1 {
+        top: 40vh;
+        max-width: 30vw;
+    }
+    .img-balloon2 {
+        max-width: 12vw;
+    }
+    .moon {
+        max-width: 28vw;
+    }
+    .cloud1 {
+        top: 14vh;
+        max-width: 40vw;
+    }
+    .cloud2 {
+        max-width: 80vw;
+    }
+    .cloud3 {
+        top: 16vh;
+        max-width: 30vw;
+    }
+}
+
+/* medium */
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .moon {
+        max-width: 24vw;
+    }
+}
