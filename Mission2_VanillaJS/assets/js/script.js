@@ -188,25 +188,25 @@ async function executeAnimation() {
         async function pBalloon1() {
             let yFrom = balloon.getY()
             let yTo = balloon.getY() + 40
-            await balloon.moveY(yFrom, yTo, 0.2)
+            await balloon.moveY(yFrom, yTo, 0.3)
             if (balloon.getY() > yTo) {
-                await balloon.moveY(yTo, yFrom, 0.2)
+                await balloon.moveY(yTo, yFrom, 0.3)
             }
             if (balloon.getY() != yFrom) {
-                await balloon.moveY(balloon.getY(), yFrom, 0.2)
+                await balloon.moveY(balloon.getY(), yFrom, 0.3)
                 balloon.setY(yFrom)
             }
             pBalloon1()
         }
         async function pBalloon2() {
             let yFrom = balloon2.getY()
-            let yTo = balloon2.getY() + 40
-            await balloon2.moveY(yFrom, yTo, 0.2)
+            let yTo = balloon2.getY() + 30
+            await balloon2.moveY(yFrom, yTo, 0.1875)
             if (balloon2.getY() > yTo) {
-                await balloon2.moveY(yTo, yFrom, 0.2)
+                await balloon2.moveY(yTo, yFrom, 0.1875)
             }
             if (balloon2.getY() != yFrom) {
-                await balloon2.moveY(balloon2.getY(), yFrom, 0.2)
+                await balloon2.moveY(balloon2.getY(), yFrom, 0.1875)
                 balloon2.setY(yFrom)
             }
             pBalloon2()
