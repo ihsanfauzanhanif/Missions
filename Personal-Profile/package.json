@@ -1,0 +1,14 @@
+{
+  "name": "personal-profile",
+  "version": "1.0.0",
+  "description": "College Task - Personal Profile Website using Express and Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zan#9373",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6"
+  }
+}

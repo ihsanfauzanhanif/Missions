@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
+
+html, body, #app {
+    background-color: rgb(247, 248, 249);
+    font-size: 14px;
+}
+.pre-card {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+.pre-card .form-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pre-card p {
+    font-size: 14px;
+    color: #8b8e9e;
+}
+
+#table-list th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #373a47;
+}
+
+#table-list tbody td {
+    font-size: 12.75px;
+    color: #656a80;
+}
+#table-new {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+}
